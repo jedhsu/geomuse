@@ -48,25 +48,6 @@ class _From_:
     def from_decibel(db: Decibel) -> _Amplitude:
         return _Amplitude(10.0 ** (db / 20))
 
-    @staticmethod
-    def from_power(pow: Power) -> _Amplitude:
-        return _Amplitude(10.0 ** (pow / 10))
-
-    @staticmethod
-    def from_phon(phon: Phon, f: Frequency) -> Phon:
-        raise NotImplementedError
-
-
-class _Into_(_Amplitude):
-    def into_decibel(self) -> Decibel:
-        return Decibel(20 * log(self, 10))
-
-    def into_power(self) -> Power:
-        return Power(10 * log(self, 10))
-
-    def into_phon(self, f: Frequency) -> Phon:
-        raise NotImplementedError
-
 
 class _Convert_(
     _From_,

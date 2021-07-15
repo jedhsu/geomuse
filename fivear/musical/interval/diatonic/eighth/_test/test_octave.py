@@ -1,0 +1,2 @@
+class TestOctave:
+    pass

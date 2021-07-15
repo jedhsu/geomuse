@@ -21,20 +21,6 @@ __all__ = ["Key"]
 # --
 
 
-def format_accidental(accidental: str) -> str:
-    if accidental == "s":
-        return "\u266f"
-    elif accidental == "f":
-        return "\u266d"
-    else:
-        raise KeyError("Not an accidental.")
-
-
-@dataclass
-class _Key:
-    _key: _KeyEnum
-
-
 # this stuff can go fuck itself
 class _Ops_(_Key):
     def __add__(self, n: int) -> _Key:
@@ -43,14 +29,6 @@ class _Ops_(_Key):
     def __sub__(self, n: int) -> _Key:
         # TODO: can make interval() invoke the references... like a monad??
         return _Key((self._key.value - n) % 12)
-
-
-class _Display_(_Key):
-    def __repr__(self):
-        keyname = self._key.name
-        keyname = keyname.replace("s", format_accidental("s"))
-        keyname = keyname.replace("s", format_accidental("s"))
-        return keyname
 
 
 # TODO: meh... metaclass is another way to do this... think about which better (vs. 2 layer indirection)

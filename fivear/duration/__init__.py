@@ -1,0 +1,7 @@
+"""
+
+    *dur*
+
+  Duration measure types.
+
+"""

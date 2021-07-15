@@ -1,6 +1,6 @@
 """
 
-    Phon
+    *Phon*
 
   Measures loudness.
 
