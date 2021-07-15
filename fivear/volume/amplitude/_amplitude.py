@@ -8,9 +8,21 @@
 
 from dataclasses import dataclass
 
+from .._volume import Volume
+
 
 @dataclass
 class Amplitude(
+    float,
     Volume,
 ):
-    pass
+    def __init__(
+        self,
+        val: float,
+    ):
+        assert 0.0 <= self <= 1.0, ValueError("Amplitude must be between 0 and 1.")
+
+        super(Amplitude, self).__new__(
+            float,
+            val,
+        )

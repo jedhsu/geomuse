@@ -4,9 +4,18 @@
 
 """
 
+__all__ = ["AudioFrequency"]
+
+from ..frequency import Frequency
+
 
 class AudioFrequency(
     Frequency,
-    Spectral,
 ):
-    pass
+    def __init__(
+        self,
+        value: float,
+    ):
+        super(AudioFrequency, self).__init__(
+            value,
+        )

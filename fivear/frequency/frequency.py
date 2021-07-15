@@ -47,6 +47,14 @@ class _Display_(_Frequency):
         return f"{self._value} {self.unit}"
 
 
-class Frequency(float):
-    def __init__(self, value):
-        super(Frequency, self).__new__(float, value)
+class Frequency(
+    float,
+):
+    def __init__(
+        self,
+        value: float,
+    ):
+        super(Frequency, self).__new__(
+            float,
+            value,
+        )

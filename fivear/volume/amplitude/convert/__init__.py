@@ -1,5 +1,5 @@
 from .from_ import From
-from .into import Into
+from .into_ import Into
 
 __all__ = ["Convert"]
 

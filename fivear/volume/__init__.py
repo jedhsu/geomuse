@@ -1,10 +1,12 @@
 """
 
-    energy
+    *vol*
 
-  Energy produces volume.
+  Volume types.
 
 """
+
+from ._bind import Volume
 
 from .amplitude import Amplitude
 from .base import Ampl

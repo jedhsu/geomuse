@@ -2,10 +2,22 @@
 
     *Timbre*
 
-  Timbre is a mapping of a harmonic series to amplitudes.
+  Maps the harmonics of a harmonic series to volume.
 
 """
 
+from typing import Mapping
 
-class Timbre:
-    fundamental: AudioFrequency
+from fivear.frequency import AudioFrequency
+from fivear.volume import Volume
+
+from ..harmonic import Harmonic
+from ..harmonic import HarmonicSeries
+
+
+class Timbre(
+    HarmonicSeries,
+    Mapping[Harmonic, Volume],
+):
+    def __init__(self):
+        pass
