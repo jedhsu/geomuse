@@ -9,8 +9,15 @@
 from ._bind import Volume
 
 from .amplitude import Amplitude
-from .base import Ampl
-from .phon import Phon
+from .decibel import Decibel
+
+__all__ = [
+    "Volume",
+    "Amplitude",
+    "Decibel",
+]
+
+# from .phon import Phon
 
 # from .power import Power
 

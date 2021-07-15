@@ -1,4 +1,12 @@
+"""
+
+    *Amplitude - Display*
+
+"""
+
 from ._amplitude import Amplitude
+
+__all__ = ["Display"]
 
 
 class Display(
