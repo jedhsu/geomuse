@@ -17,6 +17,8 @@ from fivear.musical.scale import Diatonic
 
 from ..._interval import Interval
 
+__all__ = ["Tritone"]
+
 
 @dataclass
 class Tritone(

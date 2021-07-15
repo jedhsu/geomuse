@@ -8,9 +8,9 @@ from dataclasses import dataclass
 
 from fivear.musical.scale import Diatonic
 
-from ..._ordering import SimpleInterval
+from ...simple import SimpleInterval
 
-__all__ = ["PerfectFifth"]
+__all__ = ["Octave"]
 
 
 @dataclass
