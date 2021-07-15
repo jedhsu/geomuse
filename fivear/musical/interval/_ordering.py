@@ -8,11 +8,14 @@
 
 
 class IntervalOrdering:
-    def __init__(self):
-        pass
-
     def __lt__(self):
         pass
 
     def __le__(self):
+        pass
+
+    def __gt__(self):
+        pass
+
+    def __ge__(self):
         pass

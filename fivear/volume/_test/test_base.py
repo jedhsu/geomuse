@@ -8,12 +8,6 @@ class TestAmpl:
         assert issubclass(Power, Ampl)
         assert issubclass(Phon, Ampl)
 
-    def test_amplitude(self):
-        ampl = Amplitude(1)
-
-        assert isinstance(ampl, Amplitude)
-        assert isinstance(ampl, float)
-
     def test_decibel(self):
         db = Decibel(-10)
 

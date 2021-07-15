@@ -1,8 +1,8 @@
 """
 
-    Transient
+    *Kick Transient*
 
-  Models the transient of the kick.
+  The transient component of the kick.
 
 """
 
@@ -24,9 +24,8 @@ class _Build_:
     pass
 
 
-class Transient(Build, Kick, Wave):
+class KickTransient(
+    Build,
+    Wave,
+):
     ...
-
-
-class _Dark_:
-    pass

@@ -5,6 +5,7 @@
   Maps the harmonics of a harmonic series to volume.
 
   # [TODO] this is theoretically WAVE, move out?
+  # [TODO] can also extend wave?
 
 """
 

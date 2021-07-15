@@ -4,41 +4,36 @@
 
   Models a musical step.
 
+  Contains n atoms.
+
 """
 
 from dataclasses import dataclass
 from typing import Sequence
 
-from .block import Block
-from .frames import Frames
+from .atom import Atom
 
 __all__ = ["Step"]
 
 
 @dataclass
-class _Step:
+class Step(
+    tuple[Atom],
+):
     index: int
 
-    frames: Frames
-    blocks: Sequence[Block]
+    def __init__(
+        self,
+        bars: Sequence[Atom],
+        index: int,
+    ):
+        self.index = index
+        assert 1 <= index <= 4, "Not a valid index."
 
+        super(Step, self).__new__(
+            tuple,
+            bars,
+        )
 
-class _Step_(_Step):
-    ...
-
-
-class _Display_(_Step):
-    def __getitem__(self):
-        ...
-
-
-class Step(
-    _Display_,
-    _Step_,
-    _Step,
-):
-    def __init__(self, index: int, blocks_per_step: int):
-        assert 1 <= index <= 4, "Not a valid step index."
-
-        blocks = tuple([Block(i) for i in range(1, blocks_per_step)])
-        super().__init__(index, blocks)
+    def __repr__(self) -> str:
+        return f"Step {self.index}"

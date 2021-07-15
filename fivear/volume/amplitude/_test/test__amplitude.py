@@ -5,6 +5,7 @@
 """
 
 import pytest
+from pytest import approx
 
 from .._amplitude import Amplitude
 
@@ -12,6 +13,9 @@ from .._amplitude import Amplitude
 class TestAmplitude:
     def test_init(self):
         ampl = Amplitude(0.5)
+        assert isinstance(ampl, Amplitude)
+        assert isinstance(ampl, float)
+        assert ampl == approx(0.5)
 
         with pytest.raises(ValueError):
             Amplitude(-0.5)

@@ -2,9 +2,10 @@
 
     *Kick*
 
-  The kick sound.
+  The kick.
 
 """
+
 from dataclasses import dataclass
 from typing import TypeVar
 
@@ -13,7 +14,7 @@ __all__ = ["Kick"]
 
 @dataclass
 class Kick(
-    Sound,
+    Drums,
 ):
     Transient = TypeVar("Transient")
     Roll = TypeVar("Roll")

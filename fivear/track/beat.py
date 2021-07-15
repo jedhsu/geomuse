@@ -4,6 +4,8 @@
 
   Models a musical beat.
 
+  Contains 4 steps.
+
 """
 
 from dataclasses import dataclass

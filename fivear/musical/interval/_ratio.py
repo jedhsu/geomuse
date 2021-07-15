@@ -10,6 +10,8 @@
 
 from fractions import Fraction
 
+# [TODO] is this fraction or just value?
+
 
 class FrequencyRatio(
     Fraction,

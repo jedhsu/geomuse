@@ -14,5 +14,12 @@ __all__ = ["Diatonic"]
 class Diatonic(
     Scale,
 ):
+    notes = 12
+
+    def ratio(self):
+        """
+        2 root 12
+        """
+
     def __get_item__(self):
         pass
