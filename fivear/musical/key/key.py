@@ -30,21 +30,6 @@ def format_accidental(accidental: str) -> str:
         raise KeyError("Not an accidental.")
 
 
-class _KeyEnum(Enum):
-    A = "A"
-    As = "As"
-    B = "B"
-    C = "C"
-    Cs = "Cs"
-    D = "D"
-    Ds = "Ds"
-    E = "E"
-    F = "F"
-    Fs = "Fs"
-    G = "G"
-    Gs = "Gs"
-
-
 @dataclass
 class _Key:
     _key: _KeyEnum

@@ -15,11 +15,11 @@ class IntervalArithmetic(
     def __add__(
         self,
         it: Interval,
-    ):
+    ) -> Interval:
         pass
 
     def __sub__(
         self,
         it: Interval,
-    ):
+    ) -> Interval:
         pass

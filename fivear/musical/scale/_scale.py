@@ -4,9 +4,10 @@
 
   A type that is "musically scaled".
 
-  # [TODO] better explanation.
+  More precisely, a scale is a partition of the octave into n
+  equidistant parts.
 
-  # [TODO] is this a mathematical ring?
+  # [TODO] better explanation on log equidistance.
 
 """
 

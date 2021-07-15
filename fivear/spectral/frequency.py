@@ -35,7 +35,10 @@ class _Into_(float):
         return Duration(1 / self)
 
 
-class _Convert_(_From_, _Into_):
+class _Convert_(
+    _From_,
+    _Into_,
+):
     def from_angular_frequency(self):
         ...
 

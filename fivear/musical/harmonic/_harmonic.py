@@ -2,11 +2,14 @@
 
     *Harmonic*
 
+  Integer multiples of the fundamental frequency.
+
 """
 
 from dataclasses import dataclass
 
 from fivear.frequency import AudioFrequency
+from fivear.frequency import FundamentalFrequency
 
 __all__ = ["Harmonic"]
 
@@ -16,6 +19,7 @@ class Harmonic(
     AudioFrequency,
 ):
     index: int
+    fundamental: FundamentalFrequency
 
     def __init__(
         self,
