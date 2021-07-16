@@ -1,6 +1,6 @@
 """
 
-    *Decibel*
+    *Power*
 
 """
 
@@ -10,7 +10,7 @@ from .._volume import Volume
 
 
 @dataclass
-class Decibel(
+class Power(
     float,
     Volume,
 ):
@@ -18,8 +18,9 @@ class Decibel(
         self,
         val: float,
     ):
-        assert val >= 0.0, ValueError("Decibels must be lower than 0.")
-        super(Decibel, self).__new__(
+        # [TODO] confirm
+        assert 0.0 <= self <= 1.0, ValueError("Power must be lower than 0.")
+        super(Power, self).__new__(
             float,
             val,
         )
