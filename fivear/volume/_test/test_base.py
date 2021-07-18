@@ -14,12 +14,6 @@ class TestAmpl:
         assert isinstance(db, Decibel)
         assert isinstance(db, float)
 
-    def test_power(self):
-        pow = Power(-10)
-
-        assert isinstance(pow, Power)
-        assert isinstance(pow, float)
-
     def test_phon(self):
         phon = Phon(3)
 
