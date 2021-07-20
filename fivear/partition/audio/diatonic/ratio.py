@@ -1,7 +1,7 @@
-# this has to be 2 root 12
+# # this has to be 2 root 12
 
 
-class SemitoneRatio(
-    Fraction,
-):
-    pass
+# class SemitoneRatio(
+#     Fraction,
+# ):
+#     pass

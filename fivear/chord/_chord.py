@@ -2,6 +2,8 @@
 
     *Chord*
 
+    rename set.
+
 """
 
 from typing import Sequence

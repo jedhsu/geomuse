@@ -2,11 +2,23 @@
 
     *Decibel*
 
+  A decibel.
+
+  Remember that *decibel is ilke interval*.
+
+  They are relative.
+
+  Think analogy.
+
 """
 
 from dataclasses import dataclass
 
 from .._volume import Volume
+
+__all__ = [
+    "Decibel",
+]
 
 
 @dataclass

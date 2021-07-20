@@ -1,21 +1,23 @@
 """
 
-    *Diatonic*
+    *Twelfth Audio Partition*
+    
+  The twelfth audio partition.
 
-  A type scaled with 12 elements.
+  Common known as diatonic scale.
 
 """
 
 from dataclasses import dataclass
 
-from .._scale import Scale
+from .._partition import AudioPartition
 
 __all__ = ["Diatonic"]
 
 
 @dataclass
-class Diatonic(
-    Scale,
+class TwelvthAudioPartition(
+    AudioPartition,
 ):
     def __init__(
         self,

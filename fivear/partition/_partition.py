@@ -1,8 +1,10 @@
 """
 
-    *Scale*
+    *Partition*
 
-  A type that is "musically scaled".
+  A type that is "musically scaled". 
+
+  This is commonly scale, and there can be temporal scale as well!
 
   More precisely, a scale is a partition of the octave into n
   equidistant parts.
@@ -16,7 +18,7 @@
 from abc import ABCMeta
 from dataclasses import dataclass
 
-__all__ = ["Scale"]
+__all__ = ["Partition"]
 
 
 @dataclass

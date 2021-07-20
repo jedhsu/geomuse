@@ -1,7 +1,0 @@
-"""
-
-    *mus*
-
-  Music-theoretic types.
-
-"""
