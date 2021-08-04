@@ -1,0 +1,9 @@
+"""
+
+    *Shape*
+
+"""
+
+
+class Shape:
+    pass

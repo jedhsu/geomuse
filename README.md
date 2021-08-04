@@ -5,4 +5,3 @@ Sound transforms
 * Equalization
   - filters
 
-

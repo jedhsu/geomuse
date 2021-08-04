@@ -1,3 +1,0 @@
-## sound
-
-Sound synthesis.

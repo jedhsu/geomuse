@@ -1,5 +1,0 @@
-"""
-
-UV (Continuous-Discrete) Quantization.
-
-"""
