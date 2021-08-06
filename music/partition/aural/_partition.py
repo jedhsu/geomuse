@@ -10,7 +10,7 @@ Partition time values into absolute key classes (beat).
 
 # circ imports an issue later.. deal
 
-from fivear.class_.audio import AuralClass
+from music.root.aural import AuralRoot
 
 
 class AuralPartition(

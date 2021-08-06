@@ -13,9 +13,7 @@ from typing import TypeVar
 __all__ = ["Volume"]
 
 
-class Volume(
-    ValueMeasure,
-):
+class Volume:
     __metaclass__ = ABCMeta
 
     Amplitude = TypeVar("Amplitude")

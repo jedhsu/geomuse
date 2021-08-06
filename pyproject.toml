@@ -13,6 +13,7 @@ python = "^3.9"
 [tool.poetry.dev-dependencies]
 pytest = "^6.2"
 
+depyth = { git = "https://github.com/jedhsu/depyth.git" }
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

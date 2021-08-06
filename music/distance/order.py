@@ -1,6 +1,6 @@
 """
 
-    *Interval,   [Ordering Interface]*
+    *[Order]  of  Interval*
 
   Defines the total ordering on intervals.
 
@@ -11,7 +11,7 @@ from ._interval import Interval
 __all__ = ["IntervalOrdering"]
 
 
-class Order(
+class IntervalOrdering(
     Interval,
 ):
     def __lt__(

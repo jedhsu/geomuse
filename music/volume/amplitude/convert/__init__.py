@@ -2,8 +2,6 @@
 
     *vol . ampl . conv*
 
-  Amplitude conversion interfaces.
-
 """
 
 from .from_ import From

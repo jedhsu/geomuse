@@ -1,6 +1,6 @@
 """
 
-    *Absolute Key-Class*
+    *Absolute Root*
 
 """
 

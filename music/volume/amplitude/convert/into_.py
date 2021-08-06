@@ -6,7 +6,6 @@
 
 from ...decibel._decibel import Decibel
 from ...power._power import Power
-
 from .._amplitude import Amplitude
 
 from math import log

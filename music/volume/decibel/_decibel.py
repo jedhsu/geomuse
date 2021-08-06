@@ -16,9 +16,7 @@ from dataclasses import dataclass
 
 from .._volume import Volume
 
-__all__ = [
-    "Decibel",
-]
+__all__ = ["Decibel"]
 
 
 @dataclass

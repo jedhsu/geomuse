@@ -1,7 +1,7 @@
 """
 
-    *Class*
-  
+    *Root*
+
   An equivalence class of musical numbers.
 
 """

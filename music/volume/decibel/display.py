@@ -1,3 +1,9 @@
+"""
+
+    *[Display] Decibel*
+
+"""
+
 from ._decibel import Decibel
 
 

@@ -1,13 +1,12 @@
 """
 
-    *Decibel - Convert - From*
+    *[Convert From] Decibel*
 
 """
 
 
 from ...amplitude._amplitude import Amplitude
 from ...power._power import Power
-
 from .._decibel import Decibel
 
 from math import log

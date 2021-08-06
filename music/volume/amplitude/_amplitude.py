@@ -8,6 +8,8 @@
 
 from dataclasses import dataclass
 
+from depyth import Type
+
 from .._volume import Volume
 
 __all__ = ["Amplitude"]

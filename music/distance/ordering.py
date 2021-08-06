@@ -1,39 +1,39 @@
 """
 
-    *Interval,   [Ordering Interface]*
+    *[Ordering] Distance*
 
-  Defines the total ordering on intervals.
+  Defines a total ordering on distance.
 
 """
 
-from ._interval import Interval
+from ._distance import Distance
 
-__all__ = ["IntervalOrdering"]
+__all__ = ["DistancelOrdering"]
 
 
-class Order(
-    Interval,
+class DistancelOrdering(
+    Distance,
 ):
     def __lt__(
         self,
-        it: Interval,
+        it: Distance,
     ):
         return self.steps < it.steps
 
     def __le__(
         self,
-        it: Interval,
+        it: Distance,
     ):
         return self.steps <= it.steps
 
     def __gt__(
         self,
-        it: Interval,
+        it: Distance,
     ):
         return self.steps > it.steps
 
     def __ge__(
         self,
-        it: Interval,
+        it: Distancel,
     ):
         return self.steps >= it.steps

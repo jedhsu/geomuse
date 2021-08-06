@@ -1,6 +1,6 @@
 """
 
-    *Decibel - Convert - Into*
+    *[Convert Into] Decibel*
 
 """
 
