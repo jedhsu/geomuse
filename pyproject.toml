@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "Music theory from a geometric perspective."
 authors = ["jedhsu <jedhsu@pm.me>"]
 readme = "README.md"
-repository = "https://github.com/jedhsu/music"
+repository = "https://github.com/jedhsu/geomuse"
 
 [tool.poetry.dependencies]
 python = "^3.9"
